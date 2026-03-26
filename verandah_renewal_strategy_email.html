@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verandah Properties | Our Renewal Recommendation for 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --ivory: #FAF7F2;
+    --deep-green: #1C3A2E;
+    --sage: #4A7C6F;
+    --gold: #C9A84C;
+    --warm-white: #FFFFFF;
+    --light-sage: #EAF2EF;
+    --text-dark: #1A1A1A;
+    --text-mid: #4A4A4A;
+    --text-light: #7A7A7A;
+    --border: #D8E5E1;
+    --alert-soft: #FDF6E3;
+  }
+
+  body {
+    background-color: #E8E4DC;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .email-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    background: var(--ivory);
+  }
+
+  /* HEADER */
+  .header {
+    background: var(--deep-green);
+    padding: 40px 48px 36px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    border: 1px solid rgba(201,168,76,0.18);
+  }
+
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; right: 40px;
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    border: 1px solid rgba(201,168,76,0.10);
+  }
+
+  .logo-line {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--warm-white);
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .header h1 em {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .header-sub {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.02em;
+  }
+
+  .gold-rule {
+    width: 48px;
+    height: 2px;
+    background: var(--gold);
+    margin: 20px 0 16px;
+  }
+
+  /* RECOMMENDATION BANNER */
+  .rec-banner {
+    background: var(--alert-soft);
+    border-left: 4px solid var(--gold);
+    padding: 20px 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .rec-banner-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+
+  .rec-banner-text {
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .rec-banner-text strong {
+    color: var(--deep-green);
+    font-weight: 700;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  /* INTRO */
+  .intro {
+    padding: 44px 48px 36px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-label {
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 20px;
+  }
+
+  .intro p {
+    font-size: 15.5px;
+    line-height: 1.8;
+    color: var(--text-mid);
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+
+  .intro p:last-child { margin-bottom: 0; }
+
+  .intro p strong {
+    color: var(--deep-green);
+    font-weight: 600;
+  }
+
+  /* DATA SECTION */
+  .data-section {
+    padding: 44px 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .data-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: var(--deep-green);
+    margin-bottom: 8px;
+  }
+
+  .data-section .section-intro {
+    font-size: 14px;
+    color: var(--text-light);
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+
+  /* STAT CARDS */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .stat-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--deep-green);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-number span {
+    color: var(--gold);
+  }
+
+  .stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--text-light);
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+
+  .stat-source {
+    font-size: 10px;
+    color: #B0B0B0;
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  /* MARKET FACTORS */
+  .factor {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .factor:first-of-type { border-top: 1px solid var(--border); }
+
+  .factor-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    width: 36px;
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  .factor-body {}
+
+  .factor-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--deep-green);
+    margin-bottom: 4px;
+  }
+
+  .factor-desc {
+    font-size: 13px;
+    color: var(--text-mid);
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .factor-desc em {
+    font-style: normal;
+    color: var(--sage);
+    font-weight: 600;
+  }
+
+  /* MATH SECTION */
+  .math-section {
+    background: var(--deep-green);
+    padding: 40px 48px;
+  }
+
+  .math-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: var(--warm-white);
+    margin-bottom: 8px;
+  }
+
+  .math-section .math-sub {
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.6);
+    font-weight: 300;
+    margin-bottom: 28px;
+  }
+
+  .math-box {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+
+  .math-scenario {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .math-scenario.bad { color: #E07070; }
+  .math-scenario.good { color: var(--gold); }
+
+  .math-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    font-size: 13px;
+  }
+
+  .math-line:last-child { border-bottom: none; }
+
+  .math-label {
+    color: rgba(255,255,255,0.7);
+    font-weight: 300;
+  }
+
+  .math-value {
+    font-weight: 600;
+    color: var(--warm-white);
+  }
+
+  .math-value.negative { color: #E07070; }
+  .math-value.positive { color: #7EC8A0; }
+
+  .math-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0 0;
+    margin-top: 8px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .math-total-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--warm-white);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .math-total-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .math-total-value.negative { color: #E07070; }
+  .math-total-value.positive { color: #7EC8A0; }
+
+  /* TIMELINE SECTION */
+  .timeline-section {
+    padding: 44px 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .timeline-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: var(--deep-green);
+    margin-bottom: 8px;
+  }
+
+  .timeline-section .tl-sub {
+    font-size: 14px;
+    color: var(--text-light);
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+
+  .tl-step {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .tl-dot {
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--gold);
+    margin-top: 6px;
+    position: relative;
+  }
+
+  .tl-body {}
+
+  .tl-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 3px;
+  }
+
+  .tl-text {
+    font-size: 13.5px;
+    color: var(--text-mid);
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  /* CLOSING */
+  .closing {
+    padding: 44px 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .closing p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-mid);
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+
+  .closing p:last-of-type { margin-bottom: 0; }
+
+  .closing p strong {
+    color: var(--deep-green);
+    font-weight: 600;
+  }
+
+  .sign-off {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  .sign-off .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--deep-green);
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+
+  .sign-off .title-line {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sage);
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #F0EDE6;
+    padding: 28px 48px;
+    text-align: center;
+  }
+
+  .footer .footer-logo {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--deep-green);
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .footer p {
+    font-size: 11px;
+    color: var(--text-light);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .footer a {
+    color: var(--sage);
+    text-decoration: none;
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+
+<div class="email-wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-line">Verandah Properties &nbsp;|&nbsp; Owner Renewal Advisory · 2026</div>
+    <h1>This Year, Holding the Line<br>on Rent <em>Is</em> the Strategy.</h1>
+    <div class="gold-rule"></div>
+    <div class="header-sub">Our data-backed recommendation for your upcoming lease renewal — and why it protects your investment.</div>
+  </div>
+
+  <!-- RECOMMENDATION BANNER -->
+  <div class="rec-banner">
+    <div class="rec-banner-icon">📋</div>
+    <div class="rec-banner-text">
+      <strong>Our 2026 Renewal Recommendation: No Rent Increase</strong>
+      For qualifying tenants with a strong payment history, we are recommending renewal at the current rent rate. Here's the full picture — and the math behind it.
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="intro">
+    <div class="section-label">A Note from Pamela Syvertson, Broker/Owner</div>
+    <p>
+      Hi Valued Verandah Client,
+    </p>
+    <p>
+      Your tenant's lease renewal is coming up, and we want to share our recommendation for this cycle along with the market data behind it.
+    </p>
+    <p>
+      <strong>The Orlando rental market has corrected meaningfully from its post-pandemic highs.</strong> This isn't a surprise to anyone who has been watching the news, but we want to give you the full picture — the data, the reasoning, and exactly what we believe is the smartest move to protect your investment this renewal cycle.
+    </p>
+    <p>
+      Our recommendation: renew your tenant at their current rate, with no increase. Not because we're being passive — but because in this market, <strong>that is the aggressive move.</strong> Here's why.
+    </p>
+  </div>
+
+  <!-- DATA SECTION -->
+  <div class="data-section">
+    <div class="section-label">The Market Reality</div>
+    <h2>What the Data Is Telling Us</h2>
+    <p class="section-intro">Orlando's rental market has shifted from post-pandemic frenzy to measured correction. These aren't projections — they're what's happening right now in your backyard.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-number"><span>−</span>3.1<span>%</span></div>
+        <div class="stat-label">Orlando Rents Year-Over-Year</div>
+        <div class="stat-source">Point2Homes / Yardi, Feb 2026</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">30<span>–</span>90</div>
+        <div class="stat-label">Days Vacant Properties Sit on Market</div>
+        <div class="stat-source">JAG Property Mgmt, 2025</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span>$</span>2,500<span>+</span></div>
+        <div class="stat-label">Average Cost Per Tenant Turnover</div>
+        <div class="stat-source">Ackley Florida PM, 2025</div>
+      </div>
+    </div>
+
+    <div class="factor">
+      <div class="factor-icon">🏗️</div>
+      <div class="factor-body">
+        <div class="factor-title">Build-to-Rent Communities Are Competing for Your Tenant</div>
+        <div class="factor-desc">Single-family builders are actively delivering brand-new homes into <em>build-to-rent (BTR) communities</em> across Central Florida — purpose-built single-family homes offered for rent, often with upgraded finishes and amenities. Large institutional investors and major homebuilders have launched dedicated BTR divisions throughout the region, including right here in Lake Nona. Your tenant has more never-before-lived-in single-family options to compare against your property than ever before.</div>
+      </div>
+    </div>
+
+    <div class="factor">
+      <div class="factor-icon">🏠</div>
+      <div class="factor-body">
+        <div class="factor-title">The Rise of the "Accidental Landlord"</div>
+        <div class="factor-desc">With mortgage rates hovering at <em>6–7%</em>, many homeowners who expected to sell simply cannot. Rather than take a loss or sit vacant, they're converting those homes to rentals — adding inventory to an already competitive market and directly competing with your property.</div>
+      </div>
+    </div>
+
+    <div class="factor">
+      <div class="factor-icon">💸</div>
+      <div class="factor-body">
+        <div class="factor-title">Inflation Has Squeezed Tenants</div>
+        <div class="factor-desc">The post-pandemic rent spikes were extraordinary — some Florida landlords saw <em>20%+ annual increases</em> between 2020 and 2023. But wages didn't keep pace. Today's tenants are budget-conscious and comparison-shopping online in real time. A rent even slightly above market means a longer vacancy.</div>
+      </div>
+    </div>
+
+    <div class="factor">
+      <div class="factor-icon">🤝</div>
+      <div class="factor-body">
+        <div class="factor-title">Tenants Are Doubling Up — or Opting Out</div>
+        <div class="factor-desc">Affordability pressure has led many renters to share households or downsize rather than renew at higher rates. The renter pool for single-family homes at premium price points has genuinely shrunk. <em>Good tenants who pay on time are harder to replace than ever.</em></div>
+      </div>
+    </div>
+
+    <div class="factor">
+      <div class="factor-icon">📉</div>
+      <div class="factor-body">
+        <div class="factor-title">The Correction Is Market-Wide, Not Just Orlando</div>
+        <div class="factor-desc">This isn't a local blip. Jacksonville led the nation with a <em>12% year-over-year rent drop</em> by mid-2024. Tampa saw rents fall roughly 6% in the same window — following a 38% spike in 2022. Orlando's trajectory mirrors the broader Sun Belt correction as the frenzied pandemic-era market normalizes.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MATH SECTION -->
+  <div class="math-section">
+    <div class="section-label" style="color: rgba(201,168,76,0.7);">The Numbers Don't Lie</div>
+    <h2>The Real Cost of a Rent Increase</h2>
+    <p class="math-sub">Let's run the math on a modest $50–$100/month increase — and what happens if your tenant walks.</p>
+
+    <div class="math-box">
+      <div class="math-scenario bad">⚠ &nbsp;Scenario A — You Raise the Rent, Tenant Leaves</div>
+      <div class="math-line"><span class="math-label">Potential annual gain from $50–$100/mo increase</span><span class="math-value positive">+$600–$1,200</span></div>
+      <div class="math-line"><span class="math-label">Lost rent during 60-day vacancy (at $2,400/mo)</span><span class="math-value negative">−$4,800</span></div>
+      <div class="math-line"><span class="math-label">Turnover maintenance, cleaning, touch-ups</span><span class="math-value negative">−$1,500</span></div>
+      <div class="math-line"><span class="math-label">Re-leasing costs (marketing, showings, admin)</span><span class="math-value negative">−$500</span></div>
+      <div class="math-line"><span class="math-label">Risk of re-leasing at lower market rate</span><span class="math-value negative">likely lower</span></div>
+      <div class="math-total">
+        <span class="math-total-label">Net Position</span>
+        <span class="math-total-value negative">−$5,600+</span>
+      </div>
+    </div>
+
+    <div class="math-box">
+      <div class="math-scenario good">✦ &nbsp;Scenario B — You Hold the Rate, Tenant Stays</div>
+      <div class="math-line"><span class="math-label">Vacancy cost</span><span class="math-value positive">$0</span></div>
+      <div class="math-line"><span class="math-label">Turnover maintenance cost</span><span class="math-value positive">$0</span></div>
+      <div class="math-line"><span class="math-label">Uninterrupted rent for 12 months</span><span class="math-value positive">100%</span></div>
+      <div class="math-line"><span class="math-label">Tenant satisfaction & long-term retention</span><span class="math-value positive">preserved</span></div>
+      <div class="math-total">
+        <span class="math-total-label">Net Position</span>
+        <span class="math-total-value positive">Protected &amp; Stable</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIMELINE SECTION -->
+  <div class="timeline-section">
+    <div class="section-label">What Happens Next</div>
+    <h2>Our Renewal Process From Here</h2>
+    <p class="tl-sub">We begin this process 2½ to 3 months before your lease end date to ensure nothing is rushed and everything is compliant with Florida statutes.</p>
+
+    <div class="tl-step">
+      <div class="tl-dot"></div>
+      <div class="tl-body">
+        <div class="tl-label">Now — Renewal Rate Determined</div>
+        <div class="tl-text">We've reviewed current market conditions and your tenant's payment history. Our recommendation is renewal at the current rate — protecting your investment and your tenant relationship in this correcting market.</div>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-dot"></div>
+      <div class="tl-body">
+        <div class="tl-label">Next — Renewal Offer to Tenant</div>
+        <div class="tl-text">Within the next week, we will present the renewal offer to your tenant. Under Florida statutes, tenants requiring 60-day notice must have their renewal decision finalized no later than 65 days before lease expiration.</div>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-dot"></div>
+      <div class="tl-body">
+        <div class="tl-label">If Needed — We Negotiate on Your Behalf</div>
+        <div class="tl-text">If there is any pushback or counter from the tenant, we handle those negotiations strategically — always with your investment's long-term stability as the priority.</div>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-dot"></div>
+      <div class="tl-body">
+        <div class="tl-label">Final — Signed Renewal Delivered to You</div>
+        <div class="tl-text">Once we have a fully executed lease renewal, we'll send you a copy and upload it to your Owner Portal. If the tenant decides not to renew, we notify you immediately and begin our re-leasing process.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <p>
+      The post-pandemic rent boom was real, and your investment benefited from it. But the market is correcting — and the owners who will come out ahead in this cycle are the ones who hold their good tenants close, not the ones chasing an extra $50 or $100 a month and ending up with 60 days of vacancy in return.
+    </p>
+    <p>
+      <strong>We are not passive managers, and this recommendation is not a passive one.</strong> It is a deliberate, data-informed strategy built on 20+ years of experience in this market — and we are confident it is the right call.
+    </p>
+    <p>
+      As always, this is ultimately your decision, and we are here to discuss it. If you'd like to talk through the analysis or have questions about your specific property, please don't hesitate to reach out. We're here.
+    </p>
+
+    <div class="sign-off">
+      <div class="name">Pamela Syvertson</div>
+      <div class="title-line">Broker &amp; Owner &nbsp;·&nbsp; Verandah Properties, LLC &nbsp;·&nbsp; Lake Nona, Orlando</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span class="footer-logo">Verandah Properties, LLC</span>
+    <p>
+      Lake Nona's Boutique Property Management Firm &nbsp;·&nbsp; White-Glove Service, Every Step<br>
+      Want more market insight? <a href="https://www.verandahproperties.com/blog/navigating-the-new-norm-in-the-orlando-rental-market-mastering-your-rental-property-strategy">Read our full market analysis on the blog →</a><br><br>
+      <a href="#">Unsubscribe</a> &nbsp;·&nbsp; <a href="#">View in Browser</a> &nbsp;·&nbsp; <a href="#">Contact Us</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
